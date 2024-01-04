@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: EurekaService # 设置这个spring应用名称为EurekaService
+
+eureka:
+  instance:
+    prefer-ip-address: true # 指定注册的微服务使用IP地址作为实例的标识
+    hostname: localhost # 设置微服务的主机地址
+  client:
+    register-with-eureka: false # 不将自己注册到Eureka服务里
+    fetch-registry: false # 自己不从Eureka服务里获取注册表信息
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # Eureka服务器的URL
