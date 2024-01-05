@@ -1,0 +1,13 @@
+server:
+  port: 8031
+
+spring:
+  rabbitmq:
+    host: xx.xx.xx.xx
+    port: 5672
+    virtual-host: /
+    username: username
+    password: password
+    listener:
+      simple:
+        prefetch: 1

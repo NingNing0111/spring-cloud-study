@@ -1,0 +1,10 @@
+server:
+  port: 8030
+
+spring:
+  rabbitmq:
+    host: xx.xx.xx.xx
+    port: 5672
+    virtual-host: /
+    username: username
+    password: password
