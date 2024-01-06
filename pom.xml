@@ -15,6 +15,7 @@
         <module>cloud-gateway</module>
         <module>rabbit-provider</module>
         <module>rabbit-consumer</module>
+        <module>es-demo</module>
     </modules>
 
     <properties>
